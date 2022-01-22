@@ -1,0 +1,11 @@
+<div class="side-nav">
+
+<img class="profile-picture" src="https://i.pravatar.cc/200"/>
+<p class="user-name">John Doe</p>
+<p class="user-email">johndoe@gmail.com</p>
+
+<nav *ngFor="let item of menuOptions; let i = index" [ngClass]="{'btn-contianer':true, 'selected':item.selected}">
+    <a [routerLink]="item.link" (click)="onSelect(i)" [ngClass]="{btn:true, 'selected':item.selected}"><i [ngClass]="['fa', item.icon]"></i> {{item.title}}</a>
+</nav>
+
+</div>
