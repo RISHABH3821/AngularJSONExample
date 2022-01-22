@@ -1,0 +1,13 @@
+{
+    "id":1,
+    "domain":"xyz.com",
+    "storage":"250gb",
+    "usedStorage":"50gb",
+    "domainTag": "Primary",
+    "availableDomains":10,
+    "usedDomains":1,
+    "status":"Inactive",
+    "subDomain":[],
+    "monthlyVisitorCapacity":1000,
+    "monthlyVisitor":100
+}
