@@ -1,0 +1,78 @@
+.modal {
+  /* display: none; Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 10px;
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  /* border: 1px solid #888; */
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.modal-header {
+  padding: 8px 36px 4px 36px;
+  /* background-color: white; */
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header > h3 {
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  /* padding: 2px 16px; */
+  /* background-color: #5cb85c; */
+  color: black;
+}
+
+input {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+form{
+    font-size: 12px;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  margin-inline: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

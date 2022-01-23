@@ -1,0 +1,89 @@
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Add Domain Details</h3>
+        <i class="fa fa-close"></i>
+      </div>
+      <hr/>
+      <div class="modal-body">
+        <form [formGroup]="checkoutForm">
+          <div class="row">
+            <div class="column">
+              <label for="domain">Domain Name</label>
+              <input type="text" id="domain" formControlName="domain"/>
+            </div>
+            <div class="column">
+              <label for="storage">Storage</label>
+              <input type="number" id="storage" formControlName="storage" [required]="true"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <label for="domainTag">Domain Tag</label>
+              <input type="text" id="domainTag" formControlName="domainTag"/>
+            </div>
+            <div class="column">
+              <label for="monthlyVisitorCapacity">Monthly Visitor Capacity</label>
+              <input type="text" id="monthlyVisitorCapacity" formControlName="monthlyVisitorCapacity" [required]="true"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <label for="usedStorage">Used Storage</label>
+              <input type="number" id="usedStorage" formControlName="usedStorage"/>
+            </div>
+            <div class="column">
+              <label for="monthlyVisitor">Monthly Visitors</label>
+              <input type="number" id="monthlyVisitor" formControlName="monthlyVisitor" [required]="true"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <label for="status">Status</label>
+              <input type="text" id="status" formControlName="status"/>
+            </div>
+            <div class="column">
+              <label for="availableDomains">Available Domains</label>
+              <input type="number" id="availableDomains" formControlName="availableDomains"/>
+            </div>
+          </div>
+          <hr/>
+          <div formArrayName="subDomain">
+            <div *ngFor="let domain of subDomain.controls; let pointIndex = index" 
+            [formGroupName]="pointIndex">
+              <div class="row">
+                <div class="column">
+                  <label for="domain">Domain Name</label>
+                  <input type="text" id="sub-domain" formControlName="domain"/>
+                </div>
+                <div class="column">
+                  <label for="usedStorage">Used Storage</label>
+                  <input type="number" id="sub-usedStorage" formControlName="usedStorage"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <label for="domainTag">Domain Tag</label>
+                  <input type="text" id="sub-domainTag" formControlName="domainTag"/>
+                </div>
+                <div class="column">
+                  <label for="monthlyVisitor">Monthly Visitor</label>
+                  <input type="text" id="sub-monthlyVisitor" formControlName="monthlyVisitor" [required]="true"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button>Close</button>
+        <button type="submit" (click)="formSubmit()">Submit</button>
+      </div>
+    </div>
+  
+  </div>

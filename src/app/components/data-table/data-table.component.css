@@ -8,10 +8,18 @@
   padding-right: 16px;
 }
 
+.table-column{
+  width: 15%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .table-header > span {
   text-align: start;
   font-size: 14px;
   color: #929292;
-  padding: 8px;
+  /* padding: 8px; */
   font-weight: bold;
 }

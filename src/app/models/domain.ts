@@ -1,9 +1,8 @@
 export interface Domain {
-  id: number;
+  id?: number;
   domain: string;
   usedStorage: number;
   domainTag: string;
   status: string;
   monthlyVisitor: number;
-
 }

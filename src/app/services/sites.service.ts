@@ -19,4 +19,9 @@ export class SitesService {
   getSites(): Observable<SuperDomain[]> {
     return this.http.get<SuperDomain[]>(`${environment.apiUrl}${this.sitesUrl}`);
   }
+
+  postDomain(data:SuperDomain):Observable<any>{
+    return this.http.post(`${environment.apiUrl}${this.sitesUrl}`, data);
+  }
+
 }

@@ -7,9 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { SiteDetailsComponent } from './components/site-details/site-details.component';
 import { SampleComponent } from './components/sample/sample.component';
 import { DataTableComponent } from './components/data-table/data-table.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { DataItemComponent } from './components/data-item/data-item.component';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
+import { LabelComponent } from './components/label/label.component';
+import { DataSubItemComponent } from './components/data-sub-item/data-sub-item.component';
+import { DataFormModalComponent } from './components/data-form-modal/data-form-modal.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,17 @@ import { ProgressbarComponent } from './components/progressbar/progressbar.compo
     SampleComponent,
     DataTableComponent,
     DataItemComponent,
-    ProgressbarComponent
+    ProgressbarComponent,
+    LabelComponent,
+    DataSubItemComponent,
+    DataFormModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
