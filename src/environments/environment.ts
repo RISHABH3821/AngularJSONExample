@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://my-json-server.typicode.com/RISHABH3821/AngularJSONExampleServer/'
+  apiUrl: 'http://localhost:3000/'
 };
 
 /*

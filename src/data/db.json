@@ -55,7 +55,34 @@
       "subDomain": [],
       "monthlyVisitorCapacity": 1000,
       "monthlyVisitor": 100
+    },
+    {
+      "domain": "google.com",
+      "storage": 1000,
+      "domainTag": "Primary",
+      "monthlyVisitorCapacity": 5000,
+      "usedStorage": 300,
+      "monthlyVisitor": 500,
+      "availableDomains": 3,
+      "usedDomains": 0,
+      "subDomain": [
+        {
+          "domain": "drive.google.com",
+          "usedStorage": 50,
+          "domainTag": "Drive",
+          "status": "Active",
+          "monthlyVisitor": 200
+        },
+        {
+          "domain": "mail.google.com",
+          "usedStorage": 30,
+          "domainTag": "Mail",
+          "status": "Inactive",
+          "monthlyVisitor": 90
+        }
+      ],
+      "status": "Active",
+      "id": 4
     }
-    
   ]
 }

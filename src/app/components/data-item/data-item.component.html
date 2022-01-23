@@ -24,7 +24,7 @@
     >
   </span>
   <span class="col domain-used">
-    {{ superDomain.usedDomains }} / {{ superDomain.availableDomains }}
+    {{ 1 + superDomain.subDomain.length }} / {{ superDomain.availableDomains }}
   </span>
   <span class="col domain-status">
     <app-label [label]="superDomain.status" [color]="color"></app-label>
