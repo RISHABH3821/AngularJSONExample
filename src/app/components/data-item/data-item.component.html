@@ -27,7 +27,7 @@
     {{ superDomain.usedDomains }} / {{ superDomain.availableDomains }}
   </span>
   <span class="col domain-status">
-    <app-label [label]="superDomain.status" [color]="'#33cc86'"></app-label>
+    <app-label [label]="superDomain.status" [color]="color"></app-label>
   </span>
 </div>
 <div *ngIf="superDomain?.subDomain" style="width: 100%; background-color: #dee5ff; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">

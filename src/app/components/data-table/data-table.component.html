@@ -1,4 +1,5 @@
-<div>
+<input type="text" class="search-field" placeholder="Search records..." [(ngModel)]="searchText">
+<div class="table-container">
   <div class="table-header">
       <span class="table-column">Domain & Plan</span>
       <span class="table-column">Storage</span>
@@ -6,7 +7,7 @@
       <span class="table-column">Domains</span>
       <span class="table-column">Status</span>
   </div>
-  <div *ngFor="let domain of domains">
+  <div *ngFor="let domain of (domains | searchByName:searchText)">
       <app-data-item [superDomain]="domain"></app-data-item>
   </div>
 </div>

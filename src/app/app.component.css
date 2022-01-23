@@ -1,12 +1,11 @@
 .container{
     min-width: max-content;
-    min-height: max-content;
     display: flex;
 }
 
 .sidenav{
-    flex: 0.2;
     min-height: 100vh;
+    flex: 0.2;
     background-color: #5B7CFD;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -14,7 +13,6 @@
 
 .main-content{
     flex: 0.8;
-    min-height: 100%;
     padding: 50px;
     background-color: #E7EEF7;
     border-top-right-radius: 10px;

@@ -2,7 +2,7 @@
   /* display: none; Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 50px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -19,6 +19,7 @@
   background-color: white;
   margin: auto;
   padding: 0;
+  height: 80%;
   /* border: 1px solid #888; */
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -45,13 +46,17 @@
 }
 
 .modal-body {
+  height: 65%;
+  overflow: auto;
   padding: 2px 16px;
 }
 
 .modal-footer {
-  /* padding: 2px 16px; */
-  /* background-color: #5cb85c; */
-  color: black;
+  /* min-height: 60px; */
+  padding: 10px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 input {
@@ -71,8 +76,17 @@ form{
   margin-inline: 10px;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+}
+
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+p{
+  padding-left: 12px;
 }

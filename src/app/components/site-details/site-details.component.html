@@ -1,9 +1,10 @@
 
 <header class="header">
 <h1>Site Details</h1>
-<button class="color-button">+ Add New Site</button>
+<app-std-button (click)="openModal()" [text]="'+ Add New Site'" [type]="'solid'"></app-std-button>
+<!-- <button class="color-button" (click)="openModal()">+ Add New Site</button> -->
 </header>
 
-<app-data-table></app-data-table>
+<app-data-table [domains]="domains"></app-data-table>
 
-<app-data-form-modal></app-data-form-modal>
+<app-data-form-modal *ngIf="showModal" (close)="onModalClose($event)"></app-data-form-modal>

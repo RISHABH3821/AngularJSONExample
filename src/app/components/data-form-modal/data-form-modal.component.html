@@ -5,7 +5,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3>Add Domain Details</h3>
-        <i class="fa fa-close"></i>
+        <i class="fa fa-close" (click)="closeModal('cancelled')"></i>
       </div>
       <hr/>
       <div class="modal-body">
@@ -50,7 +50,7 @@
               <input type="number" id="availableDomains" formControlName="availableDomains"/>
             </div>
           </div>
-          <hr/>
+          <p>Sub Domains:</p>
           <div formArrayName="subDomain">
             <div *ngFor="let domain of subDomain.controls; let pointIndex = index" 
             [formGroupName]="pointIndex">
@@ -74,15 +74,25 @@
                   <input type="text" id="sub-monthlyVisitor" formControlName="monthlyVisitor" [required]="true"/>
                 </div>
               </div>
+              <div class="row">
+                <div class="column">
+                  <label for="status">Status</label>
+                  <input type="text" id="sub-status" formControlName="status"/>
+                </div>
+                <div class="column">
+                   <i  (click)="removeDomain(pointIndex)" class="fa fa-close"></i>
+                </div>
+              </div>
             </div>
           </div>
-
+          <app-std-button [type]="'outlined'" (click)="addSubDomain()" text="Add More"></app-std-button>
         </form>
 
       </div>
+      <hr/>
       <div class="modal-footer">
-        <button>Close</button>
-        <button type="submit" (click)="formSubmit()">Submit</button>
+        <app-std-button [type]="'outlined'" (click)="closeModal('cancelled')" text="Close"></app-std-button>
+        <app-std-button [type]="'solid'" (click)="formSubmit()" text="Save Changes"></app-std-button>
       </div>
     </div>
   

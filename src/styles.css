@@ -1,16 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-    font-family: 'Nunito', sans-serif;
-    box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
 }
 
+:root {
+  --blue: #5b7cfd;
+  --black: #232d42;
+  --gray: #e3e5e8;
+  --lightgray: #e7eef7;
+  --inactive: 255, 127, 87;
+  --active: 91, 124, 253;
+}
 
-.color-button{
-    background-color: #5B7CFD;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    min-height: 50px;
-    min-width: max-content;
-    padding: 10px;
+.color-button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  min-height: 50px;
+  min-width: max-content;
+  padding: 10px;
 }

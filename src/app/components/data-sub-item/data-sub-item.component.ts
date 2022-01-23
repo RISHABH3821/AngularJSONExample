@@ -12,4 +12,8 @@ export class DataSubItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  get color() {
+    return this.domain?.status!=='Active'?'var(--inactive)':'var(--active)'
+  }
 }

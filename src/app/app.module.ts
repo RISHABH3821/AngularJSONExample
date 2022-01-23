@@ -14,6 +14,8 @@ import { LabelComponent } from './components/label/label.component';
 import { DataSubItemComponent } from './components/data-sub-item/data-sub-item.component';
 import { DataFormModalComponent } from './components/data-form-modal/data-form-modal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchByNamePipe } from './pipes/SearchByName';
+import { StdButtonComponent } from './components/std-button/std-button.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProgressbarComponent,
     LabelComponent,
     DataSubItemComponent,
-    DataFormModalComponent
+    DataFormModalComponent,
+    SearchByNamePipe,
+    StdButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -4,15 +4,17 @@
     </span>
     <span class="col domain-storage">
       {{ domain.usedStorage }}
-      
+      <i class="fa fa-stop" [style.color]="'rgb('+color+')'"></i>
+      <!-- <i class="fa fa-stop" [style.color]="'red'"></i> -->
     </span>
     <span class="col domain-visitor">
         {{ domain.monthlyVisitor }}
+        <i class="fa fa-stop" [style.color]="'rgb('+color+')'"></i>
     </span>
     <span class="col domain-used">
-        <app-label [label]="domain.domainTag" [color]="'#33cc86'"></app-label>
+        <app-label [label]="domain.domainTag" [color]="color"></app-label>
     </span>
     <span class="col domain-status">
-      <app-label [label]="domain.status" [color]="'#33cc86'"></app-label>
+      <app-label [label]="domain.status" [color]="color"></app-label>
     </span>
   </div>

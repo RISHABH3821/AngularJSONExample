@@ -1,0 +1,6 @@
+<button
+  (click)="$event.stopPropagation();click.emit($event)"
+  [ngClass]="{ outlined: type === 'outlined', colored: type === 'solid' }"
+>
+  {{ text }}
+</button>

@@ -1,0 +1,21 @@
+button{
+    margin: 0px 8px;
+    border-radius: 4px;
+}
+
+.colored{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    min-width: max-content;
+    padding: 10px;
+}
+
+.outlined{
+    background: none;
+    color: black;
+    border: solid black 1px;
+    min-width: max-content;
+    padding: 10px 20px;
+}
+

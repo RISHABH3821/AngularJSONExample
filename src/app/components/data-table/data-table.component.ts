@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SuperDomain } from 'src/app/models/super-domain';
 import { SitesService } from 'src/app/services/sites.service';
 
@@ -9,19 +9,12 @@ import { SitesService } from 'src/app/services/sites.service';
 })
 export class DataTableComponent implements OnInit {
 
-  constructor(private siteService:SitesService) { }
+  constructor() { }
 
-  domains:SuperDomain[]=[];
+  @Input() domains:SuperDomain[]=[];
+  searchText = '';
 
-  ngOnInit(): void {
-    this.fetchTableData();
-  }
-
-  fetchTableData(){
-    this.siteService.getSites().subscribe((data:SuperDomain[])=>{
-      console.log('data', data);
-      this.domains = data;
-    });
+  ngOnInit(): void { 
   }
 
 }

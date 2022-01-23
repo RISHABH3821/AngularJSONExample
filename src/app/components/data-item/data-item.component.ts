@@ -12,4 +12,9 @@ export class DataItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  get color() {
+    return this.superDomain?.status!=='Active'?'var(--inactive)':'var(--active)'
+  }
+
 }

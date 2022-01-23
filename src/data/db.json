@@ -17,6 +17,14 @@
           "domainTag": "Staging",
           "monthlyVisitor": 10,
           "status": "Active"
+        },
+        {
+          "id": 12,
+          "domain": "xyz.abc.com",
+          "usedStorage": "30",
+          "domainTag": "Add-On",
+          "monthlyVisitor": 20,
+          "status": "Inactive"
         }
       ],
       "monthlyVisitorCapacity": 1000,
@@ -49,70 +57,87 @@
       "monthlyVisitor": 100
     },
     {
-      "id": 4,
-      "domain": "google.com",
-      "storage": "250",
-      "usedStorage": "50",
-      "domainTag": "Primary",
-      "availableDomains": 10,
-      "usedDomains": 3,
-      "status": "Active",
+      "domain": "",
+      "storage": 0,
+      "domainTag": "",
+      "monthlyVisitorCapacity": 0,
+      "usedStorage": 0,
+      "monthlyVisitor": 0,
+      "availableDomains": 0,
+      "usedDomains": 0,
       "subDomain": [
         {
-          "id": 12,
-          "domain": "drive.google.com",
-          "usedStorage": "50",
-          "domainTag": "Add-On",
-          "monthlyVisitor": 10,
-          "status": "Active"
-        },
-        {
-          "id": 13,
-          "domain": "mail.google.com",
-          "usedStorage": "50",
-          "domainTag": "Add-On",
-          "monthlyVisitor": 10,
-          "status": "Active"
-        },
-        {
-          "id": 14,
-          "domain": "photos.google.com",
-          "usedStorage": "50",
-          "domainTag": "Add-On",
-          "monthlyVisitor": 10,
-          "status": "Active"
+          "domain": "",
+          "usedStorage": 0,
+          "domainTag": "",
+          "status": "",
+          "monthlyVisitor": 0
         }
       ],
-      "monthlyVisitorCapacity": 1000,
-      "monthlyVisitor": 100
+      "status": "",
+      "id": 4
     },
     {
+      "domain": "",
+      "storage": 0,
+      "domainTag": "",
+      "monthlyVisitorCapacity": 0,
+      "usedStorage": 0,
+      "monthlyVisitor": 0,
+      "availableDomains": 0,
+      "usedDomains": 0,
+      "subDomain": [
+        {
+          "domain": "",
+          "usedStorage": 0,
+          "domainTag": "",
+          "status": "",
+          "monthlyVisitor": 0
+        }
+      ],
+      "status": "",
       "id": 5
     },
     {
-      "domain": "yahoo.com",
-      "storage": 150,
-      "domainTag": "primary",
-      "monthlyVisitorCapacity": "1000",
-      "usedStorage": 10,
-      "monthlyVisitor": 50,
-      "availableDomains": 10,
+      "domain": "",
+      "storage": 0,
+      "domainTag": "",
+      "monthlyVisitorCapacity": 0,
+      "usedStorage": 0,
+      "monthlyVisitor": 0,
+      "availableDomains": 0,
       "usedDomains": 0,
-      "subDomain": null,
-      "status": "Active",
+      "subDomain": [
+        {
+          "domain": "",
+          "usedStorage": 0,
+          "domainTag": "",
+          "status": "",
+          "monthlyVisitor": 0
+        }
+      ],
+      "status": "",
       "id": 6
     },
     {
-      "domain": "shopify.com",
-      "storage": 10,
-      "domainTag": "primary",
-      "monthlyVisitorCapacity": "1000",
-      "usedStorage": 5,
-      "monthlyVisitor": 20,
-      "availableDomains": 10,
+      "domain": "",
+      "storage": 0,
+      "domainTag": "",
+      "monthlyVisitorCapacity": 0,
+      "usedStorage": 0,
+      "monthlyVisitor": 0,
+      "availableDomains": 0,
       "usedDomains": 0,
-      "subDomain": null,
-      "status": "Active",
+      "subDomain": [
+        {
+          "domain": "",
+          "usedStorage": 0,
+          "domainTag": "",
+          "status": "",
+          "monthlyVisitor": 0
+        }
+      ],
+      "status": "",
       "id": 7
     }
   ]
