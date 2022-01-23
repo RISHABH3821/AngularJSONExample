@@ -3,3 +3,14 @@ html {
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
+
+
+.color-button{
+    background-color: #5B7CFD;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    min-height: 50px;
+    min-width: max-content;
+    padding: 10px;
+}

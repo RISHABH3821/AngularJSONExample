@@ -1,0 +1,11 @@
+#progressbar {
+  background-color: white;
+  border-radius: 8px;
+}
+
+#progressbar > div {
+  background-color: #33CC86;
+  height: 20px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}

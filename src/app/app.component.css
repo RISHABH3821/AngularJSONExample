@@ -1,7 +1,6 @@
 .container{
     min-width: max-content;
     min-height: max-content;
-    background-color: yellow;
     display: flex;
 }
 
@@ -16,6 +15,9 @@
 .main-content{
     flex: 0.8;
     min-height: 100%;
-    background-color: green;
+    padding: 50px;
+    background-color: #E7EEF7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 

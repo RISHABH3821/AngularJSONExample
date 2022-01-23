@@ -1,0 +1,19 @@
+<div *ngIf="superDomain!=undefined" class="table-row">
+    <span class="domain-title">
+        {{superDomain.domain}}
+    </span>
+    <span class="domain-storage">
+        <app-progressbar [progress]="100*(superDomain.usedStorage/superDomain.storage)"></app-progressbar>
+        {{superDomain.usedStorage}} of {{superDomain.storage}}
+    </span>
+    <span>
+        <app-progressbar [progress]="100*(superDomain.monthlyVisitor/superDomain.monthlyVisitorCapacity)"></app-progressbar>
+        {{superDomain.monthlyVisitor}} of {{superDomain.monthlyVisitorCapacity}}
+    </span>
+    <span>
+        {{superDomain.usedDomains}} of {{superDomain.availableDomains}}
+    </span>
+    <span>
+        {{superDomain.status}}
+    </span>
+</div>

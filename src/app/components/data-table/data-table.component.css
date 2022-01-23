@@ -1,0 +1,17 @@
+.table-header {
+  background-color: #e3e5e8;
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.table-header > span {
+  text-align: start;
+  font-size: 14px;
+  color: #929292;
+  padding: 8px;
+  font-weight: bold;
+}
